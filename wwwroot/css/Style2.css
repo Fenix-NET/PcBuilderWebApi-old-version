@@ -1,0 +1,412 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  flex: 1 0 auto;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: rgb(15, 15, 15);
+  height: 150px;
+  max-width: 100%;
+}
+
+.footer-container {
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 100%;
+}
+
+.menu-container {
+  width: 100%;
+  background-color: rgb(15, 15, 15);
+  height: 60px;
+  display: flex;
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+  z-index: 1;
+}
+.menu-container .menu {
+  width: 1440px;
+  max-width: 1920px;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.menu-container .menu .btn-nav {
+  margin-left: 2%;
+}
+
+.btn-menu {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: "Play", sans-serif;
+  font-weight: 100;
+  padding: 18px 2px;
+  height: 100%;
+}
+.btn-menu:hover {
+  border-bottom: 2px solid greenyellow;
+}
+
+.btn-menu:hover {
+  color: chartreuse;
+}
+
+.btn-menu-dop {
+  margin-right: 2%;
+}
+
+#basket {
+  margin-left: auto;
+}
+
+.menu-icon {
+  vertical-align: middle;
+  width: 28px;
+}
+
+.dropdown {
+  float: left;
+  height: 100%;
+  overflow: visible;
+  color: white;
+  margin-right: 2%;
+}
+
+.drop-btn-catalog {
+  text-align: center;
+  font-size: 1.2em;
+  font-family: "Play", sans-serif;
+  font-weight: 100;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.drop-btn-catalog:hover {
+  color: chartreuse;
+}
+
+.dropdown-catalog {
+  display: none;
+  position: absolute;
+  background-color: rgb(15, 15, 15);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-catalog a {
+  /* float: none; */
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: "Play", sans-serif;
+  font-weight: 100;
+}
+
+.dropdown:hover .dropdown-catalog {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.a-catalog img {
+  width: 30px;
+  vertical-align: middle;
+}
+
+.a-catalog:hover {
+  color: #00C90D;
+  background-color: rgb(30, 30, 30);
+}
+
+/**********************************************************/
+.wrapper {
+  margin: 0 auto;
+}
+
+.content {
+  background: linear-gradient(0deg, #0a0a0a 20%, #2b2b2b 100%);
+  background-color: rgb(15, 15, 15);
+  height: 100vh;
+  background-attachment: fixed;
+  height: auto;
+}
+
+.catalog-wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+  color: whitesmoke;
+  display: flex;
+  margin-top: 60px;
+  padding: 20px 40px;
+}
+
+.filter-container {
+  min-width: 310px;
+  background-color: rgb(15, 15, 15);
+  background: radial-gradient(circle farthest-corner at center center, #161616 0%, #0F0F0F 100%);
+  border-radius: 10px;
+}
+.filter-container .filter-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.filter-container .filter-content hr {
+  margin: 10px 0px;
+}
+.filter-container .filter-content p {
+  font-family: "Play", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.filter-container .filter-content .name-type-filter {
+  font-size: 1.1rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+}
+.filter-container .filter-content .custom-select select {
+  padding: 3px;
+  border-radius: 5px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: rgb(20, 20, 20);
+  border: 0;
+  color: oldlace;
+}
+.filter-container .filter-content .custom-select select option {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.catalog-top-bar {
+  background-color: rgb(15, 15, 15);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  margin-left: 40px;
+}
+
+.sort-container {
+  display: flex;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+}
+.sort-container .sorting-menu {
+  background-color: rgb(15, 15, 15);
+  color: oldlace;
+  border: 0;
+  border-bottom: 1px solid oldlace;
+}
+#mda {
+
+}
+
+.select-view {
+  margin-left: auto;
+}
+.select-view img {
+  width: 15px;
+}
+.select-view #list-view {
+  margin-left: 5px;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.products-list .product-cart {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 310px;
+  padding: 20px;
+  margin: 40px 0 0 40px;
+  background-color: rgb(15, 15, 15);
+  border-radius: 10px;
+  font-family: "Nunito Sans", sans-serif;
+  box-shadow: 0 0 15px -5px #434343;
+  background: linear-gradient(199deg, rgba(43, 43, 43, 0.2) 55%, rgb(15, 15, 15) 45%);
+}
+.products-list .product-cart img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.products-list .product-cart .img-cart {
+  padding: 10px 20px;
+}
+.products-list .product-cart .p-price {
+  margin-top: auto;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.products-list .product-cart .btn-product {
+  color: white;
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.products-list .product-cart .btn-product:hover {
+  color: chartreuse;
+}
+.products-list .product-cart .btn-buy {
+  color: white;
+  align-self: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+  width: 120px;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.products-list .product-cart .btn-buy:hover {
+  color: black;
+  background-color: chartreuse;
+}
+
+.filter-price {
+  padding: 3px;
+  width: 30%;
+  border-radius: 5px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.filter-price-container {
+  margin: 10px 0px;
+}
+
+.custom-select {
+  margin: 10px 0px;
+}
+
+/************** Пагинация ************/
+.pagination {
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgb(15, 15, 15);
+  border-radius: 10px;
+}
+
+.pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  transition: background-color 0.3s;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: chartreuse;
+  color: black;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+/************************************************************/
+/***************** Кнопка скролла вверх ******************/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/************************************************/
+.footer-container {
+  display: flex;
+  color: white;
+  padding: 10px;
+  justify-content: center;
+}
+.footer-container .footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 3%;
+}
+.footer-container .footer-contact a {
+  color: white;
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.footer-container .footer-contact a img {
+  width: 30px;
+  vertical-align: middle;
+}
+.footer-container .footer-contact span {
+  margin-top: auto;
+}
+.footer-container .footer-contact a:hover {
+  color: chartreuse;
+}/*# sourceMappingURL=Style2.css.map */

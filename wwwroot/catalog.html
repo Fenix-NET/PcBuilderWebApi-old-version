@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/Style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600&family=Play&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <!--<script src="/js/scripts.js"></script>-->
+    <script src="/js/catalog.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+            <div class="menu-container">
+                <nav class="menu">
+                    <!-- <img src="/images/pclog3.png" alt="logo"> -->
+                    <div class="dropdown">
+                        <div class="drop-btn-catalog">Каталог&nbsp;
+                            <i class="fa fa-caret-down"></i>
+                        </div>
+                        <div class="dropdown-catalog">
+                            <a href="catalog.html" class="a-catalog"><img src="/icon/icons-cpu-white.png" alt="cpu" class="icon-catalog">&nbsp; Процессоры</a>
+                            <a href="catalog.html" class="a-catalog"><img src="/icon/icons-gpu-white.png" alt="gpu" class="icon-catalog">&nbsp; Видеокарты</a>
+                            <a href="catalog.html" class="a-catalog"><img src="/icon/icons-motherboard-white.png" alt="mbr" class="icon-catalog">&nbsp; Материнские платы</a>
+                            <a href="catalog.html" class="a-catalog"><img src="/icon/icons-ram-white.png" alt="ram" class="icon-catalog">&nbsp; Оперативная память</a>
+                            <a href="catalog.html" class="a-catalog"><img src="/icon/icons-hdd-white.png" alt="psu" class="icon-catalog">&nbsp; Жесткие диски</a>
+                            <a href="catalog.html" class="a-catalog"><img src="/icon/icons-ssd-white.png" alt="psu" class="icon-catalog">&nbsp; SSD</a>
+                            <a href="catalog.html" class="a-catalog"><img src="/icon/icons-power-supply-white.png" alt="psu" class="icon-catalog">&nbsp; Блоки питания</a>
+                            <a href="catalog.html" class="a-catalog"><img src="/icon/icons-case-white.png" alt="case" class="icon-catalog">&nbsp; Корпусы</a>
+                        </div>
+                    </div>
+    
+                    <!-- <a class="btn-menu btn-menu-dop" href="#">КАТАЛОГ</a> -->
+    
+                    <a class="btn-menu btn-menu-dop" href="/Index.html">Конструктор ПК</a>
+    
+                    <a class="btn-menu" href="#">Готовые Сборки</a>
+    
+                    <a class="btn-menu btn-menu-dop" id="basket" href="#">Корзина<img class="menu-icon" src="/icon/icons8-basket.png" alt="basket"></a>
+    
+                    <a class="btn-menu" href="#">Войти<img class="menu-icon" src="/icon/icons8-lk.png" alt="login"></a>
+                    
+                </nav>
+            </div>
+        <main class="content">
+            <div class="catalog-wrapper">
+                <div class="filter-container">
+                    <div class="filter-content">
+                        <p>Фильтры</p>
+                        <span class="name-type-filter">Цена</span>
+                        <div class="filter-price-container">
+                            <input class="filter-price" type="number" placeholder="от">
+                            <input class="filter-price" type="number" placeholder="до">
+                        </div>
+                        <hr>
+                        <span class="name-type-filter">Производитель графического процессора</span>
+                        <div class="custom-select">
+                            <select>
+                                <option value="0">Производитель</option>
+                                <option value="1">Nvidia</option>
+                                <option value="2">AMD</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <span class="name-type-filter">Графический процессор</span>
+                        <div class="custom-select">
+                            <select>
+                                <option value="0">Производитель</option>
+                                <option value="1">Nvidia</option>
+                                <option value="2">AMD</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>  
+                <div class="products-container">
+                   <div class="catalog-top-bar">
+                     <!-- <div class="search-container">
+                         <form class="example" action="action_page.php">
+                             <input type="text" placeholder="Поиск.." name="search">
+                             <button type="submit"><i class="fa fa-search"></i></button>
+                         </form>
+                     </div> -->
+                     <div class="sort-container">
+                        <span>Сортировка:&nbsp;</span>
+                        <select class="sorting-menu">
+                            <option selected value="0">По умоланию</option>
+                            <option value="1">Сначала дешевые</option>
+                            <option value="2">Сначала дорогие</option>
+                        </select>
+                         <!-- <input id="q1" type="radio" name="sort" checked>
+                         <label for="q1">По умолчанию</label><br>
+                         <input id="q2" type="radio" name="sort">
+                         <label for="q2">Сначала дешевые</label><br>
+                         <input id="q3" type="radio" name="sort">
+                         <label for="q3">Сначала дорогие</label><br> -->
+                     </div>
+                     <div class="select-view">
+                        <a href="#"><img src="/icon/icon-grid-white.png" alt="grid view"></a>
+                        <a href="#" id="list-view"><img src="/icon/icon-list-white.png" alt="list view"></a>
+                     </div>
+                   </div>
+                    <div id="mda" class="products-list">
+                        <div class="product-cart">
+                            <div class="img-cart">
+                                <a href="#">
+                                    <img src="/images/gpu/GeForce RTX 4080-blackedition.png" alt="product-image">
+                                </a>
+                            </div>
+                            <a class="btn-product" href="#">Palit NVidia Gegorce RTX 4080</a>
+                            <p class="p-price">99484&nbsp;₽</p>
+                            <a class="btn-buy" href="#">Купить</a>
+                        </div>
+                        <!--<div class="product-cart">
+                            <div class="img-cart">
+                                <a href="#">
+                                    <img src="/images/gpu/GeForce RTX 4080-blackedition.png" alt="product-image">
+                                </a>
+                            </div>
+                            <a class="btn-product" href="#">Palit NVidia Gegorce RTX 4080</a>
+                            <p class="p-price">99484&nbsp;₽</p>
+                            <a class="btn-buy" href="#">Купить</a>
+                        </div>
+                        <div class="product-cart">
+                            <div class="img-cart">
+                                <a href="#">
+                                    <img src="/images/gpu/GeForce RTX 4080-blackedition.png" alt="product-image">
+                                </a>
+                            </div>
+                            <a class="btn-product" href="#">ASUS NVidia Gegorce RTX 4080 24Gb DDR6X</a>
+                            <p class="p-price">99484&nbsp;₽</p>
+                            <a class="btn-buy" href="#">Купить</a>
+                        </div>
+                        <div class="product-cart">
+                            <div class="img-cart">
+                                <a href="#">
+                                    <img src="/images/gpu/GeForce RTX 4080-blackedition.png" alt="product-image">
+                                </a>
+                            </div>
+                            <a class="btn-product" href="#">Palit NVidia Gegorce RTX 4080</a>
+                            <p class="p-price">99484&nbsp;₽</p>
+                            <a class="btn-buy" href="#">Купить</a>
+                        </div>
+                        <div class="product-cart">
+                            <div class="img-cart">
+                                <a href="#">
+                                    <img src="/images/gpu/GeForce RTX 4080-blackedition.png" alt="product-image">
+                                </a>
+                            </div>
+                            <a class="btn-product" href="#">Palit NVidia Gegorce RTX 4080</a>
+                            <p class="p-price">99484&nbsp;₽</p>
+                            <a class="btn-buy" href="#">Купить</a>
+                        </div>-->
+                    </div>
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a class="active" href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                      </div>
+                </div>
+            </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-contact">
+                    <a href="#">
+                        <img src="/icon/icon-github1-white.png" alt="contact github">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="#">
+                        <img src="/icon/icon-telegram1-white.png" alt="contact telegram">
+                        <span>Telegram</span>
+                    </a>
+                    <span>&copy;&nbsp;Kurbatov Vladislav</span>
+                </div>
+                
+            </div>
+        </footer>
+    
+    </div>
+</body>
+</html>
