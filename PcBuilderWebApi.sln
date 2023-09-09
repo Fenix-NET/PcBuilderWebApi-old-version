@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PcBuilderWebApi", "PcBuilderWebApi.csproj", "{64B861BD-18A5-445B-B219-70CD5EE361C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditImageName", "..\EditImageName\EditImageName.csproj", "{7B4774A6-2DC7-494C-9A79-E2DF99282164}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{64B861BD-18A5-445B-B219-70CD5EE361C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64B861BD-18A5-445B-B219-70CD5EE361C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64B861BD-18A5-445B-B219-70CD5EE361C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B4774A6-2DC7-494C-9A79-E2DF99282164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B4774A6-2DC7-494C-9A79-E2DF99282164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B4774A6-2DC7-494C-9A79-E2DF99282164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B4774A6-2DC7-494C-9A79-E2DF99282164}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
