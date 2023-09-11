@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PcBuilderWebApi.Models
+namespace Models
 {
     public class Cpu
     {

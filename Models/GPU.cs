@@ -1,4 +1,4 @@
-﻿namespace PcBuilderWebApi.Models
+﻿namespace Models
 {
     public class Gpu
     {

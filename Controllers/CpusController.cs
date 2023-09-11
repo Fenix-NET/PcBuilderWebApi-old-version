@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using PcBuilderWebApi.Data;
-using PcBuilderWebApi.Models;
+using Models;
 
-namespace PcBuilderWebApi.Controllers
+namespace Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -25,10 +25,10 @@ namespace PcBuilderWebApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cpu>>> GetCpu()
         {
-          if (_context.Cpu == null)
-          {
-              return NotFound();
-          }
+            if (_context.Cpu == null)
+            {
+                return NotFound();
+            }
             return await _context.Cpu.ToListAsync();
         }
 
@@ -36,10 +36,10 @@ namespace PcBuilderWebApi.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Cpu>> GetCpu(int id)
         {
-          if (_context.Cpu == null)
-          {
-              return NotFound();
-          }
+            if (_context.Cpu == null)
+            {
+                return NotFound();
+            }
             var cpu = await _context.Cpu.FindAsync(id);
 
             if (cpu == null)
@@ -86,10 +86,10 @@ namespace PcBuilderWebApi.Controllers
         [HttpPost]
         public async Task<ActionResult<Cpu>> PostCpu(Cpu cpu)
         {
-          if (_context.Cpu == null)
-          {
-              return Problem("Entity set 'PcBuilderContext.Cpu'  is null.");
-          }
+            if (_context.Cpu == null)
+            {
+                return Problem("Entity set 'PcBuilderContext.Cpu'  is null.");
+            }
             _context.Cpu.Add(cpu);
             await _context.SaveChangesAsync();
 

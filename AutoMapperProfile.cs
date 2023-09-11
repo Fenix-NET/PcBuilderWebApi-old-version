@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
+using Dtos.CatalogDtos;
+using Models;
 using PcBuilderWebApi.Dtos;
-using PcBuilderWebApi.Dtos.CatalogDtos;
-using PcBuilderWebApi.Models;
 
 namespace PcBuilderWebApi
 {

@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Data;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using PcBuilderWebApi.Data;
-using PcBuilderWebApi.Models;
+using Models;
 using System.Linq;
 
-namespace PcBuilderWebApi.Controllers
+namespace Controllers
 {
     [Route("[controller]")]
     [ApiController]

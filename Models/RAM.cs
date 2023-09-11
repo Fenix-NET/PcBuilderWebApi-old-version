@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PcBuilderWebApi.Models
+namespace Models
 {
     public class Ram
     {
@@ -16,7 +16,7 @@ namespace PcBuilderWebApi.Models
         public int? MemorySize { get; set; }
         public byte? Nmodule { get; set; }
         public string? MemoryHerz { get; set; }
-       
+
         public string? Mass { get; set; }
         public decimal? Price { get; set; }
         public string ImageName { get; set; }

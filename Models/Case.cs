@@ -1,4 +1,4 @@
-﻿namespace PcBuilderWebApi.Models
+﻿namespace Models
 {
     public class Case
     {
@@ -15,13 +15,13 @@
         public string? PanelButton { get; set; }
         public string? InternalBays25 { get; set; }
         public string? InternalBays35 { get; set; }
-        public string? MaxCoolerHeight { get; set; } 
+        public string? MaxCoolerHeight { get; set; }
         public string? MaxGpuLenght { get; set; }
 
         public string? Materials { get; set; }
         public string? Size { get; set; }
         public string? Mass { get; set; }
-        
+
         public decimal? Price { get; set; }
         public string ImageName { get; set; }
         public string? ImageNamePng { get; set; }

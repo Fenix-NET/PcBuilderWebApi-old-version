@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using PcBuilderWebApi.Data;
-using PcBuilderWebApi.Models;
+using Models;
 
-namespace PcBuilderWebApi.Controllers
+namespace Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -25,10 +25,10 @@ namespace PcBuilderWebApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Gpu>>> GetGpu()
         {
-          if (_context.Gpu == null)
-          {
-              return NotFound();
-          }
+            if (_context.Gpu == null)
+            {
+                return NotFound();
+            }
             return await _context.Gpu.ToListAsync();
         }
 
@@ -36,10 +36,10 @@ namespace PcBuilderWebApi.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Gpu>> GetGpu(int id)
         {
-          if (_context.Gpu == null)
-          {
-              return NotFound();
-          }
+            if (_context.Gpu == null)
+            {
+                return NotFound();
+            }
             var gpu = await _context.Gpu.FindAsync(id);
 
             if (gpu == null)
@@ -86,10 +86,10 @@ namespace PcBuilderWebApi.Controllers
         [HttpPost]
         public async Task<ActionResult<Gpu>> PostGpu(Gpu gpu)
         {
-          if (_context.Gpu == null)
-          {
-              return Problem("Entity set 'PcBuilderContext.Gpu'  is null.");
-          }
+            if (_context.Gpu == null)
+            {
+                return Problem("Entity set 'PcBuilderContext.Gpu'  is null.");
+            }
             _context.Gpu.Add(gpu);
             await _context.SaveChangesAsync();
 

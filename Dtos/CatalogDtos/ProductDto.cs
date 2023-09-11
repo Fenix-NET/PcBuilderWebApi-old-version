@@ -1,4 +1,4 @@
-﻿namespace PcBuilderWebApi.Dtos.CatalogDtos
+﻿namespace Dtos.CatalogDtos
 {
     public class ProductDto
     {

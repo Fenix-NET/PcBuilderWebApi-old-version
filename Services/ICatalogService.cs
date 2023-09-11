@@ -1,4 +1,4 @@
-﻿namespace PcBuilderWebApi.Services
+﻿namespace Services
 {
     public interface ICatalogService
     {

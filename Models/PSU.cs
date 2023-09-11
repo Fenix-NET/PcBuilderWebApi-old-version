@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PcBuilderWebApi.Models
+namespace Models
 {
     public class Psu
     {

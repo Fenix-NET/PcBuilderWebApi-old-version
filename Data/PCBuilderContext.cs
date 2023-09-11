@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PcBuilderWebApi.Models;
+using Models;
 
-namespace PcBuilderWebApi.Data
+namespace Data
 {
     public class PcBuilderContext : DbContext
     {
